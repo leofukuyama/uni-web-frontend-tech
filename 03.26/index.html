@@ -15,17 +15,22 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
+    <form id="login-form">
         <h3>Login</h3>
 
         <label for="username">Usuário</label>
-        <input type="text" placeholder="CPF" id="username">
+        <input type="text" placeholder="CPF" id="username" required maxlength="14">
+
+        <span id="cpf-error" class="error-message"></span>
 
         <label for="password">Senha</label>
-        <input type="password" placeholder="Senha" id="password">
+        <input type="password" placeholder="Senha" id="password" required>
 
-        <button>Login</button>
-        </div>
+        <span id="password-error" class="error-message"></span>
+
+        <button type="submit">Login</button>
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
